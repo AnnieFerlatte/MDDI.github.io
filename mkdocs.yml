@@ -1,0 +1,60 @@
+# Replace the text below to customize your site
+site_name: Annie Ferlatte MDDI
+site_description: MDDI master of Annie Ferlatte
+site_author: Annie Ferlatte
+copyright: Copyright 2022 Fabricademy - Creactive Commons
+
+site_url: https://class.textile-academy.org/2022/sarah-carnus/
+repo_url: https://gitlab.fabcloud.org/academany/fabricademy/2022/students/sarah-carnus
+repo_name: fabricademy/2022/sarah-carnus
+
+extra:
+  social:
+    # Change to your own social media or remove some. For more social icons at https://squidfunk.github.io/mkdocs-material/setup/adding-social-links/
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/roxysocherry
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/roxysocherry
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/sarahcarnus/
+    - icon: fontawesome/brands/github
+      link: https://github.com/Roxysocherry
+
+theme:
+  # The name of the theme, check your requirements.txt file
+  name: material
+  palette:
+    # try other colors from https://squidfunk.github.io/mkdocs-material/getting-started/#primary-colors
+    primary: white
+    accent: red
+  font:
+    # See available fonts from https://fonts.google.com/
+    text: DM Mono
+    code: Roboto Mono
+  icon:
+    # Read about icons at https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/
+    logo: material/food
+    repo: material/gitlab
+  features:
+    # See more about the navigation at https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/
+    - navigation.tabs
+
+plugins:
+  - search
+  - git-revision-date:
+      enabled_if_env: CI
+
+# See more extensions at https://squidfunk.github.io/mkdocs-material/reference/
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: false
+      toc_depth: 0
+  - meta
+
+# Extra CSS stylesheet added to docs called extra.css
+extra_css:
+  - stylesheets/extra.css
+

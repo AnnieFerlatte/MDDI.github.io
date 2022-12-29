@@ -1,33 +1,38 @@
-# MDDI - Master in Distributed Design Innovation
-This master is to investigate how design could be in the future and how fab city structure could help design a better future
-
-### Tools
-This is a test of AI discution with Copy.ai
-
-Me: can fungi and mycelium can reduce GES
-
-App:Problem: [e.g. humans are destroying nature, humans are not living in harmony with nature, etc.]
-
-Why it's a problem: we need more biodiversity in city
-
-Solution: growing mycelium 
-
-How to implement the solution: with the community
-
-Structure:
-
-Introduce the problem
-
-Explain why it's a problem
-
-Describe the solution
-
-Explain how to implement the solution
+# MDDI
+## Master in Design for Distributed Innovation
+>Globally connected, local changemakers
+>The Master in Design for Distributed Innovation (MDDI) is organised by Fab City Foundation and the Institute for Advanced Architecture of Catalonia. It is co-delivered by Fab Lab Barcelona at IAAC, local nodes of the distributed campus, and is supported by the global Fab Lab Network.
+___
+This repository documents the reflexion and the assignements of this distributed master.
+Visit [MDDI website](https://fab.city/mddi.html) for more informations.
 
 
-app: Humans are destroying nature and not living in harmony with it. This is a problem because we need more biodiversity in our cities, but we can't do that if the plants and animals are dying out due to climate change and pollution.
+## Project layout
 
-I believe that one solution to this problem is to grow mycelium. Mycelium is made up of microscopic threads called hyphae, which are similar to roots. The hyphae help plants grow by connecting them together and allowing them to absorb nutrients from the soil or water around them. Mycelium can also absorb carbon dioxide from the atmosphere and convert it into biomass, which means it helps plants absorb carbon dioxide from the air.
+    mkdocs.yml    # The site configuration file.
+    docs/         # All site content/files should be in this folder.
+        index.md  # The homepage.
+        files/    # Put files you'd like available in your site here (except videos)
+        images/   # You can put your images in here
+        ...       # Other markdown pages and folders
 
-We can implement this solution by growing mycelium ourselves in our own homes, gardens, parks, etc. We can also work together as a community by working on projects like composting or collecting litter so that we can help reduce GES in our environment while also growing our own food!
+Read more about MkDocs at [mkdocs.org](http://www.mkdocs.org).
 
+
+## Building locally
+
+To work locally on your computer with this project, you can start with the following the steps:
+
+1. Fork, clone or download this project
+1. [Install](http://www.mkdocs.org/#installation) MkDocs on your computer
+1. Preview your project: `mkdocs serve`, your site can be accessed under `localhost:8000`
+1. To add new pages, create the markdown file in the `docs/` folder (i.e. `touch docs/about.md`)
+1. Generate the website into a static site, `mkdocs build` (optional) Or just push your changes to GitLab
+
+### Run with docker
+For those that know how to use Docker, you can easily run mkdocs server without installing mkdocs.
+
+Use this command with the Mkdocs-Material theme (see more info on [Docker Hub](https://hub.docker.com/r/squidfunk/mkdocs-material)).
+```
+docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material
+```
